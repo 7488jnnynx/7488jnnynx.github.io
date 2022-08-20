@@ -1,0 +1,147 @@
+/*Colour Pallette:
+Red: #cc3333,
+Blue: #66cccc,
+Black: #003333,
+White: #ccffff,
+Grey1: #99cccc
+Grey2: #669999*/
+
+
+/* Style the body */
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  background-color: #003333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Header/logo Title */
+/* Increase the font size of the heading */
+.banner h1 {
+  font-size: 40px;
+    letter-spacing: 0.5em;
+    font-weight: bolder;
+}
+
+/*Set banner text and img inline */
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 3px solid #ccffff;
+    background-color: #ccffff;
+    margin: auto;
+    color: #003333;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .banner {
+    flex-direction: column;
+  }
+}
+
+/*Header text - Left*/
+.btext {
+  flex: 70%;
+  background-color: #ccffff;
+  padding: 2%;
+  float: left;
+  height: 100%;
+}
+.btext > h1 {
+  font-size: 5vw;
+}
+.btext > h2 {
+  font-size: 3vw;
+}
+
+.btext > p {
+  font-size: 2vw;
+  background-color: #ccffff;
+  padding-top: 3%
+}
+
+/*Header Img - Right*/
+.bimg {
+  flex: 30%;
+  background-color: #ccffff;
+  max-height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  float: right;
+}
+
+#bimg {
+    border: 3px solid #cc3333;
+}
+
+#ooh-ah {
+  color: #cc3333;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #66cccc;
+  position: sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: #003333;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #99cccc;
+  color: #003333;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #669999;
+  color: #ccffff;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Footer */
+footer {
+  padding: 50px;
+  text-align: left;
+  background: #99cccc;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .b-img {
+    flex-direction: column;
+  }
+}

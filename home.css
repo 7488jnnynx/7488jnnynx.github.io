@@ -1,0 +1,38 @@
+.aboutme > h2 {
+  text-align: center;
+  font-size: 5vw;
+}
+
+.aboutme > h3 {
+  color: #cc3333;
+  font-size: 3vw;
+}
+
+.aboutme > p {
+  font-size: 2vw;
+}
+
+.selfie {
+  display: flex;
+  justify-content: center;
+}
+#selfie {
+  width: 50%;
+  height: auto;
+  border: 3px solid #cc3333;
+  margin:auto;
+}
+
+.aboutme {
+  border-radius: 25px;
+  background: #669999;
+  padding: 2%;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 3px solid #66cccc;
+  background-color: #ccffff;
+  color: #003333;
+}
